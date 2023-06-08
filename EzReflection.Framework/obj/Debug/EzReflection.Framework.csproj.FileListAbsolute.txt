@@ -1,0 +1,10 @@
+E:\CSharp\EzReflection\EzReflection.Framework\bin\Debug\EzReflection.Framework.dll
+E:\CSharp\EzReflection\EzReflection.Framework\bin\Debug\EzReflection.Framework.pdb
+E:\CSharp\EzReflection\EzReflection.Framework\obj\Debug\EzReflection.Framework.csproj.AssemblyReference.cache
+E:\CSharp\EzReflection\EzReflection.Framework\obj\Debug\EzReflection.Framework.csproj.CoreCompileInputs.cache
+E:\CSharp\EzReflection\EzReflection.Framework\obj\Debug\EzReflection.Framework.dll
+E:\CSharp\EzReflection\EzReflection.Framework\obj\Debug\EzReflection.Framework.pdb
+E:\CSharp\EzReflection\EzReflection.Framework\bin\Debug\net472\EzReflection.Framework.dll
+E:\CSharp\EzReflection\EzReflection.Framework\bin\Debug\net472\EzReflection.Framework.pdb
+E:\CSharp\EzReflection\EzReflection.Framework\bin\Debug\net48\EzReflection.Framework.dll
+E:\CSharp\EzReflection\EzReflection.Framework\bin\Debug\net48\EzReflection.Framework.pdb

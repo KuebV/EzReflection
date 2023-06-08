@@ -1,0 +1,12 @@
+E:\CSharp\EzReflection\EzReflection\bin\Debug\net7.0\EzReflection.deps.json
+E:\CSharp\EzReflection\EzReflection\bin\Debug\net7.0\EzReflection.dll
+E:\CSharp\EzReflection\EzReflection\bin\Debug\net7.0\EzReflection.pdb
+E:\CSharp\EzReflection\EzReflection\obj\Debug\net7.0\EzReflection.csproj.AssemblyReference.cache
+E:\CSharp\EzReflection\EzReflection\obj\Debug\net7.0\EzReflection.GeneratedMSBuildEditorConfig.editorconfig
+E:\CSharp\EzReflection\EzReflection\obj\Debug\net7.0\EzReflection.AssemblyInfoInputs.cache
+E:\CSharp\EzReflection\EzReflection\obj\Debug\net7.0\EzReflection.AssemblyInfo.cs
+E:\CSharp\EzReflection\EzReflection\obj\Debug\net7.0\EzReflection.csproj.CoreCompileInputs.cache
+E:\CSharp\EzReflection\EzReflection\obj\Debug\net7.0\EzReflection.dll
+E:\CSharp\EzReflection\EzReflection\obj\Debug\net7.0\refint\EzReflection.dll
+E:\CSharp\EzReflection\EzReflection\obj\Debug\net7.0\EzReflection.pdb
+E:\CSharp\EzReflection\EzReflection\obj\Debug\net7.0\ref\EzReflection.dll

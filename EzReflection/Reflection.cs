@@ -37,11 +37,28 @@ public class Reflection
     /// <param name="parameters"></param>
     public void InvokeMethodWithName(string methodName, object? obj = null, object[]? parameters = null)
     {
-        MethodInfo methods = _assembly.GetTypes()
+        MethodInfo? methods = _assembly?.GetTypes()
             .SelectMany(t => t.GetMethods())
             .Where(m => m.Name == methodName)
             .ToArray().First();
-        methods.Invoke(obj, parameters);
+        methods!.Invoke(obj, parameters);
+    }
+
+    /// <summary>
+    /// Invokes the all methods that is specified regardless of the EzReflectionAttribute status
+    /// </summary>
+    /// <param name="methodName"></param>
+    /// <param name="obj"></param>
+    /// <param name="parameters"></param>
+    public void InvokeMethodsWithName(string methodName, object? obj = null, object[]? parameters = null)
+    {
+        MethodInfo[]? methods = _assembly?.GetTypes()
+            .SelectMany(t => t.GetMethods())
+            .Where(m => m.Name == methodName)
+            .ToArray();
+
+        for (int i = 0; i < methods?.Length; i++)
+            methods[i].Invoke(obj, parameters);
     }
 
     /// <summary>
@@ -51,30 +68,7 @@ public class Reflection
     /// <param name="obj"></param>
     /// <param name="parameters"></param>
     public void InvokeMethodWithSpecifiedName(string specifiedName, object? obj = null, object[]? parameters = null)
-    {
-        MethodInfo methods = _assembly.GetTypes()
-            .SelectMany(t => t.GetMethods())
-            .Where(m => m.GetCustomAttributes(typeof(EzReflectionAttribute), false).Length > 0)
-            .ToArray().First();
-        methods.Invoke(obj, parameters);
-    }
-
-    /// <summary>
-    /// Invokes the all methods that is specified regardless of the EzReflectionAttribute status
-    /// </summary>
-    /// <param name="methodName"></param>
-    /// <param name="obj"></param>
-    /// <param name="parameters"></param>
-    public void InvokeMehtodsWithName(string methodName, object? obj = null, object[]? parameters = null)
-    {
-        MethodInfo[] methods = _assembly.GetTypes()
-            .SelectMany(t => t.GetMethods())
-            .Where(m => m.Name == methodName)
-            .ToArray();
-
-        for (int i = 0; i < methods.Length; i++)
-            methods[i].Invoke(obj, parameters);
-    }
+        => GetEzAttribute(specifiedName)?.Invoke(obj, parameters);
 
     /// <summary>
     /// Invokes all methods that has the specified EzReflectionAttribute Name
@@ -83,20 +77,22 @@ public class Reflection
     /// <param name="parameters"></param>
     public void InvokeMethodsWithSpecifiedName(string specifiedName, object? obj = null, object[]? parameters = null)
     {
-        MethodInfo[] methods = _assembly.GetTypes()
+        MethodInfo[]? methods = _assembly?.GetTypes()
             .SelectMany(t => t.GetMethods())
             .Where(m => m.GetCustomAttributes(typeof(EzReflectionAttribute), false).Length > 0)
             .ToArray();
-        for (int i = 0; i < methods.Length; i++)
+        for (int i = 0; i < methods!.Length; i++)
             methods[i].Invoke(obj, parameters);
     }
+    
+    
 
     /// <summary>
     /// Gets all methods with the EzReflectionAttribute
     /// </summary>
     /// <returns></returns>
-    public MethodInfo[] GetEzMethods()
-        => _assembly.GetTypes()
+    public MethodInfo[]? GetEzMethods()
+        => _assembly?.GetTypes()
             .SelectMany(t => t.GetMethods())
             .Where(m => m.GetCustomAttributes(typeof(EzReflectionAttribute), false).Length > 0)
             .ToArray();
@@ -109,11 +105,11 @@ public class Reflection
     /// <typeparam name="T"></typeparam>
     public void InvokeMethodWithGenericAttribute<T>(object? obj = null, object[]? parameters = null)
     {
-        MethodInfo methods = _assembly.GetTypes()
+        MethodInfo? methods = _assembly?.GetTypes()
             .SelectMany(t => t.GetMethods())
             .Where(m => m.GetCustomAttributes(typeof(T), false).Length > 0)
             .ToArray().First();
-        methods.Invoke(obj, parameters);
+        methods?.Invoke(obj, parameters);
     }
 
     
@@ -125,12 +121,28 @@ public class Reflection
     /// <typeparam name="T"></typeparam>
     public void InvokeMethodsWithGenericAttribute<T>(object? obj = null, object[]? parameters = null)
     {
-        MethodInfo[] methods = _assembly.GetTypes()
+        MethodInfo[]? methods = _assembly?.GetTypes()
             .SelectMany(t => t.GetMethods())
             .Where(m => m.GetCustomAttributes(typeof(T), false).Length > 0)
             .ToArray();
-        for (int i = 0; i < methods.Length; i++)
-            methods[i].Invoke(obj, parameters);
+        if (methods != null)
+            for (int i = 0; i < methods.Length; i++)
+                methods[i].Invoke(obj, parameters);
     }
-    
+
+    private MethodInfo? GetEzAttribute(string callingName)
+    {
+        MethodInfo?[] methodInfo = _assembly?.GetTypes()
+            .SelectMany(t => t.GetMethods()).ToArray()!;
+
+        for (int i = 0; i < methodInfo.Length; i++)
+        {
+            EzReflectionAttribute? attr = methodInfo[i]!.GetCustomAttribute<EzReflectionAttribute>();
+            if (attr?.CallingName == callingName)
+                return methodInfo[i];
+        }
+
+        return null;
+    }
+
 }

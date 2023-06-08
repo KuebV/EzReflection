@@ -1,7 +1,10 @@
-﻿namespace EzReflection;
+﻿using System.Runtime;
 
-public class EzReflectionAttributeException : Exception
+namespace EzReflection
 {
-    public EzReflectionAttributeException() { }
-    public EzReflectionAttributeException(string message) : base(message) { }
+    public class EzReflectionAttributeException : Exception
+    {
+        public EzReflectionAttributeException() { }
+        public EzReflectionAttributeException(string message) : base(message) { }
+    }
 }

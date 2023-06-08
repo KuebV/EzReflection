@@ -1,8 +1,12 @@
-﻿namespace EzReflection;
+﻿using System;
+using System.Runtime;
 
-public class EzReflectionConstructorArgumentException : Exception
+namespace EzReflection
 {
-    public EzReflectionConstructorArgumentException() { }
-    public EzReflectionConstructorArgumentException(string message) : 
-        base(message) { }
+    public class EzReflectionConstructorArgumentException : Exception
+    {
+        public EzReflectionConstructorArgumentException() { }
+        public EzReflectionConstructorArgumentException(string message) : 
+            base(message) { }
+    }
 }

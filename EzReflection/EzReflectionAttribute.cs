@@ -1,23 +1,24 @@
 ﻿using System.Reflection;
 
-namespace EzReflection;
-
-[AttributeUsage(AttributeTargets.Method)]
-public class EzReflectionAttribute : Attribute
+namespace EzReflection
 {
-    public string CallingName { get; }
-
-    public EzReflectionAttribute(string callingName = null)
+    [AttributeUsage(AttributeTargets.Method)]
+    public class EzReflectionAttribute : Attribute
     {
-        if (string.IsNullOrEmpty(callingName))
-            callingName = Assembly.GetCallingAssembly()
-                .GetTypes()
-                .SelectMany(t => t.GetMethods())
-                .Where(m => m.GetCustomAttributes(typeof(EzReflectionAttribute), false).Length > 0)
-                .ToArray()
-                .First()
-                .Name;
+        public readonly string CallingName;
 
-        CallingName = callingName;
+        public EzReflectionAttribute(object callingName = null)
+        {
+            if (string.IsNullOrEmpty(callingName.ToString()))
+                callingName = Assembly.GetCallingAssembly()
+                    .GetTypes()
+                    .SelectMany(t => t.GetMethods())
+                    .Where(m => m.GetCustomAttributes(typeof(EzReflectionAttribute), false).Length > 0)
+                    .ToArray()
+                    .First()
+                    .Name;
+
+            CallingName = callingName.ToString();
+        }
     }
 }

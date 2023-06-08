@@ -1,0 +1,5 @@
+E:\CSharp\EzReflection\EzReflection\obj\Debug\net5.0\EzReflection.csproj.AssemblyReference.cache
+E:\CSharp\EzReflection\EzReflection\obj\Debug\net5.0\EzReflection.GeneratedMSBuildEditorConfig.editorconfig
+E:\CSharp\EzReflection\EzReflection\obj\Debug\net5.0\EzReflection.AssemblyInfoInputs.cache
+E:\CSharp\EzReflection\EzReflection\obj\Debug\net5.0\EzReflection.AssemblyInfo.cs
+E:\CSharp\EzReflection\EzReflection\obj\Debug\net5.0\EzReflection.csproj.CoreCompileInputs.cache

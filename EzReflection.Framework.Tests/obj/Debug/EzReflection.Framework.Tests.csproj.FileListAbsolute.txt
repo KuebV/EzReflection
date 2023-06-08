@@ -1,0 +1,10 @@
+E:\CSharp\EzReflection\EzReflection.Framework.Tests\bin\Debug\EzReflection.Framework.Tests.exe
+E:\CSharp\EzReflection\EzReflection.Framework.Tests\bin\Debug\EzReflection.Framework.Tests.pdb
+E:\CSharp\EzReflection\EzReflection.Framework.Tests\bin\Debug\EzReflection.Framework.dll
+E:\CSharp\EzReflection\EzReflection.Framework.Tests\bin\Debug\EzReflection.Framework.pdb
+E:\CSharp\EzReflection\EzReflection.Framework.Tests\obj\Debug\EzReflection.Framework.Tests.csproj.AssemblyReference.cache
+E:\CSharp\EzReflection\EzReflection.Framework.Tests\obj\Debug\EzReflection.Framework.Tests.csproj.SuggestedBindingRedirects.cache
+E:\CSharp\EzReflection\EzReflection.Framework.Tests\obj\Debug\EzReflection.Framework.Tests.csproj.CoreCompileInputs.cache
+E:\CSharp\EzReflection\EzReflection.Framework.Tests\obj\Debug\EzReflection.Framework.Tests.csproj.CopyComplete
+E:\CSharp\EzReflection\EzReflection.Framework.Tests\obj\Debug\EzReflection.Framework.Tests.exe
+E:\CSharp\EzReflection\EzReflection.Framework.Tests\obj\Debug\EzReflection.Framework.Tests.pdb
