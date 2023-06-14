@@ -2,7 +2,7 @@
 using EzReflection;
 using EzReflection.Tests;
 
-Assembly assembly = Assembly.Load(File.ReadAllBytes("E:\\CSharp\\MHKAnnihilation\\MHKAnnihilation\\bin\\Debug\\MHKAnnihilation.dll"));
+Assembly assembly = Assembly.Load(File.ReadAllBytes("filenamehere"));
 Reflection reflection = new Reflection(assembly);
 
 reflection.InvokeMethodWithSpecifiedName("Execute");
