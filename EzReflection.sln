@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EzReflection", "EzReflectio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EzReflection.Framework", "EzReflection.Framework\EzReflection.Framework.csproj", "{50A6F0FB-6617-4954-B513-1E750A613826}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EzReflection.Tests", "EzReflection.Tests\EzReflection.Tests.csproj", "{33678FE9-392C-453A-B75F-856475390D18}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{50A6F0FB-6617-4954-B513-1E750A613826}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50A6F0FB-6617-4954-B513-1E750A613826}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50A6F0FB-6617-4954-B513-1E750A613826}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33678FE9-392C-453A-B75F-856475390D18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33678FE9-392C-453A-B75F-856475390D18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33678FE9-392C-453A-B75F-856475390D18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33678FE9-392C-453A-B75F-856475390D18}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

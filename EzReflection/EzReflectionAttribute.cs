@@ -2,10 +2,10 @@
 
 namespace EzReflection
 {
-    [AttributeUsage(AttributeTargets.Method)]
+    [AttributeUsage(AttributeTargets.Method | AttributeTargets.Class | AttributeTargets.Property)]
     public class EzReflectionAttribute : Attribute
     {
-        public readonly string CallingName;
+        public readonly string? CallingName;
 
         public EzReflectionAttribute(object callingName = null)
         {

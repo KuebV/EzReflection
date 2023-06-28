@@ -1,8 +1,3 @@
-E:\CSharp\EzReflection\EzReflection.Tests\obj\Debug\net7.0\EzReflection.Tests.csproj.AssemblyReference.cache
-E:\CSharp\EzReflection\EzReflection.Tests\obj\Debug\net7.0\EzReflection.Tests.GeneratedMSBuildEditorConfig.editorconfig
-E:\CSharp\EzReflection\EzReflection.Tests\obj\Debug\net7.0\EzReflection.Tests.AssemblyInfoInputs.cache
-E:\CSharp\EzReflection\EzReflection.Tests\obj\Debug\net7.0\EzReflection.Tests.AssemblyInfo.cs
-E:\CSharp\EzReflection\EzReflection.Tests\obj\Debug\net7.0\EzReflection.Tests.csproj.CoreCompileInputs.cache
 E:\CSharp\EzReflection\EzReflection.Tests\bin\Debug\net7.0\EzReflection.Tests.exe
 E:\CSharp\EzReflection\EzReflection.Tests\bin\Debug\net7.0\EzReflection.Tests.deps.json
 E:\CSharp\EzReflection\EzReflection.Tests\bin\Debug\net7.0\EzReflection.Tests.runtimeconfig.json
@@ -10,6 +5,11 @@ E:\CSharp\EzReflection\EzReflection.Tests\bin\Debug\net7.0\EzReflection.Tests.dl
 E:\CSharp\EzReflection\EzReflection.Tests\bin\Debug\net7.0\EzReflection.Tests.pdb
 E:\CSharp\EzReflection\EzReflection.Tests\bin\Debug\net7.0\EzReflection.dll
 E:\CSharp\EzReflection\EzReflection.Tests\bin\Debug\net7.0\EzReflection.pdb
+E:\CSharp\EzReflection\EzReflection.Tests\obj\Debug\net7.0\EzReflection.Tests.csproj.AssemblyReference.cache
+E:\CSharp\EzReflection\EzReflection.Tests\obj\Debug\net7.0\EzReflection.Tests.GeneratedMSBuildEditorConfig.editorconfig
+E:\CSharp\EzReflection\EzReflection.Tests\obj\Debug\net7.0\EzReflection.Tests.AssemblyInfoInputs.cache
+E:\CSharp\EzReflection\EzReflection.Tests\obj\Debug\net7.0\EzReflection.Tests.AssemblyInfo.cs
+E:\CSharp\EzReflection\EzReflection.Tests\obj\Debug\net7.0\EzReflection.Tests.csproj.CoreCompileInputs.cache
 E:\CSharp\EzReflection\EzReflection.Tests\obj\Debug\net7.0\EzReflection.Tests.csproj.CopyComplete
 E:\CSharp\EzReflection\EzReflection.Tests\obj\Debug\net7.0\EzReflection.Tests.dll
 E:\CSharp\EzReflection\EzReflection.Tests\obj\Debug\net7.0\refint\EzReflection.Tests.dll
