@@ -30,5 +30,4 @@ Console.WriteLine($"Property from {typeB.Name}: {ezProperties.GetStaticValue("Fi
 // You are able to use [] to index for a specific property, this only works for static properties
 Console.WriteLine($"Property from {typeB.Name}: {ezProperties["LastName"]}");
 
-
 #endregion

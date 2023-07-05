@@ -26,4 +26,6 @@ public class EzTypes
     /// <returns></returns>
     public Type GetTypeWithGenericAttribute<T>()
         => _assembly.GetTypes().First(t => t.GetCustomAttributes(typeof(T), false).Length > 0);
+
+    public object? this[string typeName] => _assembly.GetTypes().First(t => t.Name == typeName);
 }

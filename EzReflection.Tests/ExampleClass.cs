@@ -26,4 +26,5 @@ public class ExampleClassC
 {
     public string? FullName { get; set; }
     public void SetName(string name) => FullName = name;
+    public string? DefaultName { get; set; } = "John Doe";
 }

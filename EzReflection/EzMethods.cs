@@ -45,16 +45,19 @@ public class EzMethods
            .First(m => m.GetCustomAttributes(typeof(T), false).Length > 0)?
            .Invoke(obj, parameters);
 
-   public MethodInfo[]? GetEzMethods()
-        => _type?.GetMethods()
-            .Where(m => m.GetCustomAttributes(typeof(EzReflectionAttribute), false).Length > 0)
-            .ToArray();
-   
-    public MethodInfo[]? GetMethodInfoWithName(string methodName)
-        => _type!.GetMethods().Where(m => m.Name == methodName).ToArray();
 
-    public MethodInfo[]? GetMethodInfoWithGeneric<T>()
-        => _type!.GetMethods().Where(m => m.GetCustomAttributes(typeof(T), false).Length > 0).ToArray();
-    
+   public MethodInfo GetMethodWithName(string methodName) => 
+       _type!.GetMethods()
+       .First(m => m.Name == methodName);
+
+   public MethodInfo GetMethodWithAttributeCallingName(string callingName)
+       => _type!.GetMethods()
+           .Where(m => m.GetCustomAttributes(typeof(EzReflectionAttribute), false).Length > 0)
+           .First(x => x.GetCustomAttribute<EzReflectionAttribute>()?.CallingName == callingName);
+
+   public MethodInfo GetMethodWithGenericAttribute<T>()
+       => _type!.GetMethods()
+           .First(m => m.GetCustomAttributes(typeof(T), false).Length > 0);
+
 
 }
